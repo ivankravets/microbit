@@ -12,11 +12,10 @@
         "name": "Microbit-DAL",
         "frameworks": "mbed"
     },
-    "include":
-    [
-      "source/*.cpp",
-      "inc/*.h"
-    ],
+    "build": {
+        "flags": "-Iinc",
+        "srcFilter": "+<source/>"
+    },
     "url": "https://github.com/lancaster-university/microbit",
     "frameworks": "mbed",
     "platforms": "nordicnrf51"
